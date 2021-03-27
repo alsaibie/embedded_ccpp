@@ -39,7 +39,6 @@ using Markdown
 mdC_code = Markdown.htmlesc(raw"""!#2""")
 mdC_code = raw"""!#2"""
 
-
 mdfile = joinpath(dirname(@OUTPUT), "!#1.md")
 open(mdfile,"w") do f
     print(f, mdC_code)
@@ -53,7 +52,6 @@ exefile = tempname()
 
 #=
 This trick is taken from
-
 https://discourse.julialang.org/t/how-to-make-a-c-function-compiled-by-myself-available-to-ccall/7972/26
 =#
 
@@ -63,14 +61,49 @@ end
 
 run(`$exefile`)
 ```
-
 \input{c}{!#1.md}
 }
+
+\newcommand{\CPPcode}[2]{
+```julia:!#1
+#hideall
+using Markdown
+
+mdC_code = Markdown.htmlesc(raw"""!#2""")
+mdC_code = raw"""!#2"""
+
+mdfile = joinpath(dirname(@OUTPUT), "!#1.md")
+open(mdfile,"w") do f
+    print(f, mdC_code)
+end
+
+CPP_code=raw"""
+!#2
+"""
+
+cppfile = joinpath(dirname(@OUTPUT), "!#1.cpp")
+
+open(cppfile,"w") do f
+    print(f, CPP_code)
+end
+
+exefile = tempname()
+
+run(`g++ $cppfile -Wall -O2 -march=native -o $exefile`)
+
+run(`$exefile`)
+```
+\input{cpp}{!#1.md}
+}
+
 
 <!-- run C code and display code and its result https://terasakisatoshi.github.io/MathSeminar.jl/programming/clang/ -->
 \newcommand{\Cexec}[2]{
 \Ccode{!#1}{!#2}
-
 \codeoutput{!#1}
+}
 
+\newcommand{\CPPexec}[2]{
+\CPPcode{!#1}{!#2}
+\codeoutput{!#1}
 }
