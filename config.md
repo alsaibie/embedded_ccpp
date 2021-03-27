@@ -4,7 +4,7 @@ website.
 The website_* must be defined for the RSS to work
 -->
 @def website_title = "Embedded C/C++"
-@def website_descr = "Embedded C/C++ - Kuwait University"
+@def website_descr = "Embedded C/C++ Mini-Course - Kuwait University"
 @def website_url   = "https://alsaibie.github.io/embedded_ccpp/"
 @def hasplotly = false
 @def hasjsx = false
@@ -29,3 +29,48 @@ For instance:
 -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
+
+<!-- display C code with syntax highlight adopted from https://terasakisatoshi.github.io/MathSeminar.jl/programming/clang/ -->
+\newcommand{\Ccode}[2]{
+```julia:!#1
+#hideall
+using Markdown
+
+mdC_code = Markdown.htmlesc(raw"""!#2""")
+mdC_code = raw"""!#2"""
+
+
+mdfile = joinpath(dirname(@OUTPUT), "!#1.md")
+open(mdfile,"w") do f
+    print(f, mdC_code)
+end
+
+C_code=raw"""
+!#2
+"""
+
+exefile = tempname()
+
+#=
+This trick is taken from
+
+https://discourse.julialang.org/t/how-to-make-a-c-function-compiled-by-myself-available-to-ccall/7972/26
+=#
+
+open(`gcc -Wall -O2 -march=native -xc -o $exefile -`, "w") do f
+    print(f, C_code)
+end
+
+run(`$exefile`)
+```
+
+\input{c}{!#1.md}
+}
+
+<!-- run C code and display code and its result https://terasakisatoshi.github.io/MathSeminar.jl/programming/clang/ -->
+\newcommand{\Cexec}[2]{
+\Ccode{!#1}{!#2}
+
+\codeoutput{!#1}
+
+}

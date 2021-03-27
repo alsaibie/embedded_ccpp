@@ -5,3 +5,18 @@
 
 # C vs C++
 
+\Ccode{sample}{
+#include <stdio.h>
+int main(){
+    printf("Hello Pika\n");
+    return 0;
+}
+}
+
+\Cexec{how2embeddC}{
+#include <stdio.h>
+int main(){
+    printf("Hello World\n");
+    return 0;
+}
+}
