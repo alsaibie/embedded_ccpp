@@ -2,9 +2,18 @@
 <span class=hljs-function ><span class=hljs-keyword >int</span> <span class=hljs-title >main</span><span class=hljs-params >()</span></span>{
     <span class=hljs-built_in >printf</span>(<span class=hljs-string >&quot;Hello Pika\n&quot;</span>);
     <span class=hljs-keyword >return</span> <span class=hljs-number >0</span>;
-}</code></pre> </p> <p><pre><code class="c hljs"><span class=hljs-meta >#<span class=hljs-meta-keyword >include</span> <span class=hljs-meta-string >&lt;stdio.h&gt;</span></span>
-<span class=hljs-function ><span class=hljs-keyword >int</span> <span class=hljs-title >main</span><span class=hljs-params >()</span></span>{
-    <span class=hljs-built_in >printf</span>(<span class=hljs-string >&quot;Hello World\n&quot;</span>);
-    <span class=hljs-keyword >return</span> <span class=hljs-number >0</span>;
-}</code></pre></p> <p><pre><code class="plaintext hljs">Hello World
-</code></pre> <div class=page-foot > <div class=copyright > &copy; Ali AlSaibie, PhD. Last modified: March 27, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> </div>
+}</code></pre> </p> <p><pre><code class="cpp hljs"><span class=hljs-meta >#<span class=hljs-meta-keyword >include</span> <span class=hljs-meta-string >&lt;iostream&gt;</span> </span>
+
+<span class=hljs-function ><span class=hljs-keyword >int</span> <span class=hljs-title >main</span><span class=hljs-params >(<span class=hljs-keyword >int</span> argc, <span class=hljs-keyword >char</span>* argv[])</span> </span>{ <span class=hljs-comment >/* The main function is the starting point of any C++ program */</span>
+    <span class=hljs-keyword >int</span> a = <span class=hljs-number >120</span>; <span class=hljs-comment >/* Variables must be declared, their type must be specificied */</span>
+    <span class=hljs-keyword >int</span> b = <span class=hljs-number >250</span>;
+    <span class=hljs-keyword >int</span> c = a + b;
+    <span class=hljs-comment >/*In C++ std::cout is a way to print content to the output terminal */</span>
+    std::cout &lt;&lt; <span class=hljs-string >&quot;The sum of &quot;</span> &lt;&lt; a &lt;&lt;<span class=hljs-string >&quot; and &quot;</span> &lt;&lt; b &lt;&lt; <span class=hljs-string >&quot; is equal to &quot;</span>&lt;&lt; c &lt;&lt; std::endl;
+    
+    <span class=hljs-keyword >return</span> <span class=hljs-number >0</span>; <span class=hljs-comment >/* main is a function that returns a variable */</span>
+}</code></pre> <pre><code class="plaintext hljs">The sum of 120 and 250 is equal to 370
+</code></pre> <pre><code class="matlab hljs">a = <span class=hljs-number >120</span>;
+b = <span class=hljs-number >300</span>;
+c = a + b;
+<span class=hljs-built_in >disp</span>(<span class=hljs-string >&quot;The sum of &quot;</span> + a + <span class=hljs-string >&quot; and &quot;</span> + b + <span class=hljs-string >&quot; is equal to &quot;</span> + c)</code></pre> <div class=page-foot > <div class=copyright > &copy; Ali AlSaibie, PhD. Last modified: March 27, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> </div>

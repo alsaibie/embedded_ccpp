@@ -13,7 +13,6 @@ int main(){
     return 0;
 }"""
 
-
 mdfile = joinpath(dirname(@OUTPUT), "sample.md")
 open(mdfile,"w") do f
     print(f, mdC_code)
@@ -31,7 +30,6 @@ exefile = tempname()
 
 #=
 This trick is taken from
-
 https://discourse.julialang.org/t/how-to-make-a-c-function-compiled-by-myself-available-to-ccall/7972/26
 =#
 
