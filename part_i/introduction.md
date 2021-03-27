@@ -1,30 +1,46 @@
-@def title = "Part I Fundamentals"
+@def title = "I Fundamentals"
 
 ## Part I - Fundamentals
 
 
 <!-- TODO: ADD diagram of system response with fancy animation  -->
 
-## Class Lectures
+## Lessons
 
-| [Part I L0](../lecture1/index.html)  ~~~&ensp;&ensp;~~~ | A
+| [Part I L1](../lesson1/index.html)  ~~~&ensp;&ensp;~~~ | Introduction
 
-| [Part I L1](../lecture1/index.html)  ~~~&ensp;&ensp;~~~ | B
+| [Part I L2](../lesson2/index.html)  ~~~&ensp;&ensp;~~~ | File and Program Structure
  
-| [Part I L2](../lecture2/index.html)  ~~~&ensp;&ensp;~~~ | C
+| [Part I L3](../lesson3/index.html)  ~~~&ensp;&ensp;~~~ | Data Types
  
-| [Part I L3](../lecture3/index.html)  ~~~&ensp;&ensp;~~~ | D
+| [Part I L4](../lesson4/index.html)  ~~~&ensp;&ensp;~~~ | Variables
  
-| [Part I L4](../lecture4/index.html)  ~~~&ensp;&ensp;~~~ | E
+| [Part I L5](../lesson5/index.html)  ~~~&ensp;&ensp;~~~ | Arrays
  
-| [Part I L5](../lecture5/index.html)  ~~~&ensp;&ensp;~~~ | F
+| [Part I L6](../lesson6/index.html)  ~~~&ensp;&ensp;~~~ | Type Qualifiers and Storage Specifiers
  
-| [Part I L6](../lecture6/index.html)  ~~~&ensp;&ensp;~~~ | G
+| [Part I L7](../lesson7/index.html)  ~~~&ensp;&ensp;~~~ | Operations
  
-| [Part I L7](../lecture7/index.html)  ~~~&ensp;&ensp;~~~ | H
+| [Part I L8](../lesson8/index.html)  ~~~&ensp;&ensp;~~~ | Control Structures
  
-| [Part I L8](../lecture9/index.html)  ~~~&ensp;&ensp;~~~ | I
- 
+| [Part I L9](../lesson9/index.html)  ~~~&ensp;&ensp;~~~ | Functions
+
+| [Part I L10](../lesson10/index.html)  ~~~&ensp;~~~ | Pointers and References
+
+| [Part I L11](../lesson11/index.html)  ~~~&ensp;~~~ | Structs
+
+| [Part I L12](../lesson12/index.html)  ~~~&ensp;~~~ | Classes
+
+| [Part I L13](../lesson13/index.html)  ~~~&ensp;~~~ | Strings
+
+| [Part I L14](../lesson14/index.html)  ~~~&ensp;~~~ | Preprocessor Directives
+
+| [Part I L15](../lesson15/index.html)  ~~~&ensp;~~~ | Standard Library
+
+| [Part I L16](../lesson16/index.html)  ~~~&ensp;~~~ | C/C++ Process Flow
+
+| [Part I L17](../lesson17/index.html)  ~~~&ensp;~~~ | Debugging
+
 \\
 \\
 [Main Page](/index.html)
