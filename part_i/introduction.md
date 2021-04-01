@@ -2,8 +2,11 @@
 
 ## Part I - Fundamentals
 
+The following are the topics that will be covered in **Part I** of this course. The way the course is structured is geared toward *C* more so than *C++*. This is due to the fact that when working with microcontrollers, more of the lower-level programming aspects become important. 
 
-<!-- TODO: ADD diagram of system response with fancy animation  -->
+If we were teaching C++ for desktop applications, the structure and flow of a C++ course would be different, especially with [Modern C++](https://www.youtube.com/watch?v=YnWhqhNdYyk)
+
+These topics are not of equal weight. For example, the topic of classes in C++ is a large anc complex topic and computing concept, it is a course on its own. It will not be covered in detail; however, knowledge of bassic class structures is important when working with the Arduino framework for instance, where most of the libraries available use OOP (object-oriented programming).
 
 ## Lessons
 
