@@ -2,6 +2,12 @@
 
 ## Part I - Fundamentals
 
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386444952" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
+
+
 The following are the topics that will be covered in **Part I** of this course. The way the course is structured is geared toward *C* more so than *C++*. This is due to the fact that when working with microcontrollers, more of the lower-level programming aspects become important. 
 
 If we were teaching C++ for desktop applications, the structure and flow of a C++ course would be different, especially with [Modern C++](https://www.youtube.com/watch?v=YnWhqhNdYyk)

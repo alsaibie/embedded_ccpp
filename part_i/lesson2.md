@@ -2,6 +2,11 @@
 @def hascode = true
 
 # Program Structure
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386449901" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
+
 Here is an example C++ code and its algorithmically equivalent code in MATLAB. The first thing to note is the data type identifiers before the variables. In C/C++ variables must be declared. Their type and size must be specified. While in MATLAB a variable is an object by default. 
 \input{cpp}{snippet1.cpp}
 \input{plaintext}{output/snippet1.txt}
@@ -33,6 +38,11 @@ Even mathematical functions such as trigs, power and square are not available in
 We will go through each of the components discussed here in the following sections.
 
 # File Structure
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386449917" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
+
 Let’s familiarize ourselves with the files associated with a C/C++ project. There is not a single way these files are organized in, but here is one common folder structure. Under the folder commonly abbreviated **src**, which stands for source, you will find, with no great surprise, source files. Those are the C++ *.cpp files or C *.c files. You can have running C/C++ program just by using source files. 
 
 ~~~<center><img src="/assets/part_i/media/CPP_FOLDER_STRUCTURE.svg" style="max-width:350px"></center>~~~

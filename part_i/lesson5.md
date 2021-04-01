@@ -2,6 +2,11 @@
 @def hascode = true
 
 # Arrays
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386449984" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
+
 When you need to store a series of numbers or characters of the same data type, you can use arrays. The elements of an array are stored next to each other in memory. Imagine adjacent and similar houses along a neighborhood street. To find the memory size of the array, multiply the array size by the byte size of the data type of the array. An 4 element array of uint16_t (two bytes) would require 2x4=8 bytes of memory in storage. 
 
 Let's take a look at how we can declare, define and access arrays.  

@@ -3,4 +3,5 @@
 
 # Classes
 
+Next: [Strings](../lesson13/)
 

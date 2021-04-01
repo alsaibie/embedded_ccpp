@@ -2,6 +2,11 @@
 @def hascode = true
 
 # Type Qualifiers and Storage Specifiers
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386450007" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
+
 ## static
 In addition to specifying the data type when declaring variables, functions or other elements of C/C++, there are type qualifiers and storage specifiers that can be used on declaration.
 

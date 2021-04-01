@@ -2,6 +2,10 @@
 @def hascode = true
 
 # Why C/C++?
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386449837" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
 
 ## They dominate the embedded world
 In the embedded world C and C++ are still the dominant languages. They are here to stay for the foreseeable future. 
@@ -39,6 +43,11 @@ In the last decade, new compiled programming languages have become accepted and 
 There is still a long way to go before any of those languages beat C/C++. No one can predict the future, there are many factors and magic market-forces to consider. But it is safe to say that C and C++, are here to stay. 
 
 # C vs C++
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386449877" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
+
 Let’s have a look at the differences between C and C++. To many users of the languages C++ seems to be C with classes. This is true on the surface, and is true for much of basic usages. When it comes to professional use they grow apart in many ways. For **beginners** in embedded programming, it is safe to state that C++ is C with classes, but don't hold this concept for too long afterwards. 
 
 ## C still dominates in the micro-controller world, but things are changing

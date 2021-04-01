@@ -2,6 +2,10 @@
 @def hascode = true
 
 # Data Types
+~~~
+<center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386449945" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
+<br>
+~~~
 
 Understanding data types in a compiled language is important. By knowing the data type used, you know the memory required and the range of values it can hold, as well as how to handle the data type in a mathematical operation. 
 
