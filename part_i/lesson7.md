@@ -134,11 +134,85 @@ Bit shifting requires little effort by the CPU, it is actually also useful as a 
 <center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386922865" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
 <br>
 ~~~
+Logical expressions refer to expressions that can either be true or false. In C++ there is a bool data type, which can take only true or false as a value. The bool type is not built-in the C language, but can be easily defined manually as is often done. However, it is safer to have the bool type built-in. 
+
+|     Operator      |     Name                                        | Description                                                                  |
+|:-------------------|:-------------------------------------------------|:----------------------------------------------------------------------------------|
+|     &&            |     Logical And                                 |     Returns 1 if inputs are all nonzero, 0 otherwise                             |
+|     \|\|          |     Logical Or                                  |     Returns   0 if all inputs are zero, 1 otherwise                              |
+|     !             |     Logical NOT                                 |     Return the opposite of the logical   value                                   |
+|     <,   >, ==    |     Greater   than, less than, logical equal    |     Returns 1 if argument one is (gt, lt, equal to) argument two, 0 otherwise    |
+
+Numerically, a zero is treated as false and a non-zero value is treated as true. Performing logical operations on logical expressions is done via the following operators. 
+
+Note that here we use a double ampersand for a logical AND, while we use a single ampersand for a bitwise AND operation. 
+
+Comparisons can also be done for numerical values. 
+
+Here are a few examples of how logical operations are used. 
+\input{cpp}{snippet4.cpp}
+
+**r1**: Here we compare if a equals 3, which is true, and compare if b equals 3 which is false and then we perform an AND operation between the two, which results in false. 
+
+**r2**: And here we do the same comparisons for a and b but then we perform an OR operation. This time the results is true is at least one of the expressions is true. Not that the logic here is different than with bitwise operations. An AND between multiple expressions is true only when all expressions are true. An OR between multiple expressions is true if at least one of the expressions is true. 
+
+**r3**: We can compare values directly here and the results is true since **a** equals **c**
+
+**r4**: But **a** is not equal to **d** so that’s false.
+
+**r5**: If we convert **d** to an int we drop the decimal and it becomes equal to **a**
+
+**r6**: **a** is smaller than **b** 
+
+**r7**: and since **a** is smaller than **d**, the value in the bracket is false, if we NOT this value we get a true. 
 
 # Float vs Integer Math
 ~~~
 <center><iframe title="vimeo-player" src="https://player.vimeo.com/video/386922884" width="640" height="370" frameborder="0" allowfullscreen></iframe></center>
 <br>
 ~~~
+There are a few important points to discuss regarding integer versus floating point math. 
+
+Remember that if you are performing arithmetic operations on integers, any decimal fraction resulting from the operation will be discarded. Should you just save the result into a float variable? Well, close but that’s not the complete picture. 
+
+Let’s see how that works.
+\input{cpp}{snippet5.cpp}
+\input{plaintext}{output/snippet5.txt}
+
+**c**: both d and a are integers, the division operation is done in integer math, the result is not 1.3 but 1, before the result is saved to the variable c
+
+**d**: The same applies here, a / b is 0.75 but this is integer math so the answer is 0.
+
+**e**: Here we divide the integer a by the float bf, this makes the math carried in float terms so the result is 0.75, but because it is saved into an integer the fraction is dropped and the value stored in e is 0
+
+**f**: The math here is floating point math and now that the value to which the result is stored into is a float, then f would indeed store 0.75. 
+
+**g**: Here, even though the result variable is a float, again the mathematical operation was carried using integer math, because the values involved in the math operation are all integers.  
+
+### Float operation but int variable
+Instead of using a float data type, if it is only required that a float operation be a subpart of a division, then, either the order of the operation would have to be adjusted such that multiplication occurs before division, such as with variable **b** below.
+
+\input{cpp}{snippet6.cpp}
+\input{plaintext}{output/snippet6.txt}
+
+**c**: or the variable can be temporarily casted to a float in place here (float)
+
+Both would allow for the result to be calculated.  
+
+### Type-Casting floats
+If one of the numbers in an arithmetic operation is expressed as a float, like the 240.0 here. Then this is an implicit way to ensure the arithmetic operation is performed in float terms
+
+Alternatively, a variable can be casted in-place to be a float, this basically creates a new temporary value that is a float. It does not change the variable itself to a float. 
+
+\input{cpp}{snippet7.cpp}
+\input{plaintext}{output/snippet7.txt}
+
+We can cast variables from one type to another. Again, this doesn’t change the variable type itself, but creates a new temporary variable of a different type in place of the cast+variable operation.
+
+Even if you know the new variable can accept the value coming from an older but different data type variable, it is good practice to explicitly type cast to show intent and awareness that the type of the data has changed. 
+
+When performing floating point math, it is often desired to temporarily cast an int to a float to retain fractional values.
+
+Assigning values between nonmatching datatypes can result in hard track bugs, and worse, engineering disasters. 
 
 Next: [Control Structures](../lesson8/)
