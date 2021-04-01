@@ -28,7 +28,4 @@ gen_cpp_plain("snippet1.cpp")
 gen_cpp_plain("snippet2.cpp")
 gen_cpp_plain("snippet3.cpp")
 gen_cpp_plain("snippet4.cpp")
-gen_cpp_plain("snippet5.cpp")
-gen_cpp_plain("snippet6.cpp")
-gen_cpp_plain("snippet7.cpp")
 
