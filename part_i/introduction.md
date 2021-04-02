@@ -7,16 +7,18 @@
 <br>
 ~~~
 
-
-The following are the topics that will be covered in **Part I** of this course. The way the course is structured is geared toward *C* more so than *C++*. This is due to the fact that when working with microcontrollers, more of the lower-level programming aspects become important. 
+The following are the topics that will be covered in **Part I** of this course. The way the course is structured is geared toward *C* concepts more so than *C++* concepts. This is due to the fact that when working with microcontrollers, more of the lower-level programming aspects become important. However; the examples are provided and compiled as C++.
 
 If we were teaching C++ for desktop applications, the structure and flow of a C++ course would be different, especially with [Modern C++](https://www.youtube.com/watch?v=YnWhqhNdYyk)
 
-These topics are not of equal weight. For example, the topic of classes in C++ is a large anc complex topic and computing concept, it is a course on its own. It will not be covered in detail; however, knowledge of bassic class structures is important when working with the Arduino framework for instance, where most of the libraries available use OOP (object-oriented programming).
+These topics are not of equal weight. For example, the topic of classes in C++ is a large anc complex topic and computing concept, it is a course on its own. It will not be covered in detail; however, knowledge of basic class structures is important when working with the Arduino framework for instance, where most of the libraries available use OOP (object-oriented programming).
+
+## How to navigate the course
+While it is possible to introduce independent concepts sequentially that build on one another, soon the concepts become inter-related when building a complete program, which requires that you have a good understanding of all the fundamentals to comprehend the full picture. So try to have a long deep session reviews all fundamentals lessons, then go back and forth between the concepts that are unclear and try to practice them.
 
 ## Lessons
 
-| [Part I L1](../lesson1/index.html)  ~~~&ensp;&ensp;~~~ | Introduction
+| [Part I L1](../lesson1/index.html)  ~~~&ensp;&ensp;~~~ | C and C++
 
 | [Part I L2](../lesson2/index.html)  ~~~&ensp;&ensp;~~~ | File and Program Structure
  

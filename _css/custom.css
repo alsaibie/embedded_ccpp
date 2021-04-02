@@ -41,7 +41,7 @@ html, body {
     margin-top: 2em;
 }
 .franklin-content pre > code {
-    border: 1px solid #6B8E2340;
+    border: 1px solid #8e412327;
     padding: 1.5em;
     border-radius: 0;
 }
@@ -138,7 +138,7 @@ pre.code-output {
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: #6be0e4;
+    color: #6bb4e4;
 }
 .sidebar-nav .part::before,
 .sidebar-nav .part::after {

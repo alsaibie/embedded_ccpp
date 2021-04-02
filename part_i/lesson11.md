@@ -29,9 +29,14 @@ Once a struct instance is created, we can access its members by the dot operator
 \input{plaintext}{output/snippet2.txt}
 ## 
 
+
 \input{cpp}{snippet3.cpp}
 \input{plaintext}{output/snippet3.txt}
 
+```cpp
+test
+test2
+```
 [L1] We can create multiple instances of the struct after the struct declaration, separated by comma, ending with a semicolon. Note that these struct instances are global. 
 
 [L2] We can pass a struct to a function. Here we pass the struct by reference, so the original struct is access directly, not a copy of it. 

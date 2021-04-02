@@ -9,7 +9,7 @@
 
 Understanding data types in a compiled language is important. By knowing the data type used, you know the memory required and the range of values it can hold, as well as how to handle the data type in a mathematical operation. 
 
-Here is a table listing the main data types for a 32-bit system. The void denotes empty space, it is not a data type per se. It is used to indicate, for example, that a function does not take any variables, or does not return any variables. 
+Here is a table listing the main data types for a 32-bit system. **Void** denotes empty space, it is not a data type per se. It is used to indicate, for example, that a function does not take any variables, or does not return any variables. 
 
 | C Data Type    | C99 keyword  | Precision & Interpretation |           Range           |
 |----------------|--------------|----------------------------|:-------------------------:|
@@ -22,15 +22,15 @@ Here is a table listing the main data types for a 32-bit system. The void denote
 | int            | int          | 32-bit (signed)            | -2147483648 to 2147483647 |
 | unsigned long  | uint32_t     | 32-bit (unsigned)          |      0 to 4294967295      |
 | long           | int32_t      | 32-bit (signed)            | -2147483648 to 2147483647 |
-| float          | float        | 32-bit float               |    +/-10-38 to +/-1038    |
-| double         | double       | 64-bit float               |   +/-10-305 to +/-10305   |
+| float          | float        | 32-bit float               |    $+/-10^{-38}$ to $+/-10^{38}$    |
+| double         | double       | 64-bit float               |   $+/-10^{-305}$ to $+/-10^{305}$   |
 
 ## Standard data type sizes
 The bare C data types do not indicate the size of the data, their sizes can actually be different from one CPU architecture to another. 
 
 A char is usually 1 byte, or 8 bit. We can specify if we want a signed or unsigned char by including the unsigned or signed keywords. 
 
-The C99 keyword, or the standard library types are better to use. Since they self identify the data type: its size and whether it is signed or unsigned. 
+The C99 keyword, or the standard library types are better to use. Since they self identify the data type: its size and whether it is signed or unsigned. The data type name tells it all, no need to remember.
 
 For the ARM architecture, which is the architecture most widely used nowadays in embedded systems. An int is defined as a 32-bit signed data type. 
 

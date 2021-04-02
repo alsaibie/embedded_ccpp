@@ -245,22 +245,18 @@ body { counter-reset: eqnum; }
 ================================================================== */
 
 code {
-    background-color: rgba(27,31,35,0.05);
-    padding: 0.1em 0.2em;
-    border-radius: 2px;
+    background-color: rgba(27, 31, 35, 0.76);
+    padding: 0.1em 0.1em;
+    border-radius: none;
     font-size: 90%;
 }
-
-/* .franklin-content code { */
-    /* background-color: rgba(27,31,35,0.05); */
-    /* padding: 0.1em 0.2em; */
-    /* border-radius: 2px; */
-    /* font-size: 90%; } */
 
 .hljs {
     font-size: 90%;
     line-height: 1.35em;
-    border-radius: 10px; }
+    border-radius: 10px; 
+
+}
 
 .hljs-meta, .hljs-metas, .hljs-metap { font-weight: bold; }
 
@@ -270,12 +266,36 @@ code {
 
 .hljs-metap { color: rgb(51, 131, 231); }
 
+.hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    text-align: left;
+    color: rgb(0, 71, 99);
+    border-right: 1px solid rgba(136, 136, 136, 0.966);
+    vertical-align: top;
+    padding-right: 10px;
+    /* border: 1px solid #e5e5e500; */
+    /* your custom style here */
+ }
+
+.hljs-ln-code {
+    padding-left: 2px;
+} 
+
+.hljs .table{
+    border-color: rgba(128, 128, 128, 0);
+}
 /* ==================================================================
     BOXES
 ================================================================== */
 
 .franklin-content .colbox-blue {
-    background-color: #EEF3F5;
+    background-color: #f3eef5;
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 10px;

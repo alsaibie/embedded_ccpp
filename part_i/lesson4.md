@@ -12,17 +12,31 @@ To be able to use the standard library data types, we need to include the **<cst
 Let's take a look at this example. 
 
 \input{cpp}{snippet1.cpp}
+Output:
 \input{plaintext}{output/snippet1.txt}
 
 *Declaring* a variable is different from *defining* a variable. Declaring a variable is saying I have a variable **a** inside function main that is of **uint8_t** type. Defining a variable is *assigning* a value to it. 
 
-In the above program we have three variables, a global variable **g_c** declared outside of a function and two local variables **a** and **b**. Note that variable **a** is declared and then defined in a different step. We can also declare and define a variable like we did with the variable **b**.  
+In the above program we have three variables, a global variable **g_c** declared outside of a function
+```cpp
+uint8_t g_c;
+```
+and two local variables **a** and **b**. Note that variable **a** is declared and then defined in a different step. We can also declare and define a variable like we did with the variable **b**.  
+
+```cpp
+uint8_t a;
+int16_t b = 300; 
+g_c = 4; 
+a = g_c; 
+```
 
 **_We don’t need to identify the variable type every time we use it. But only when we declare it. And we need to declare it before we use it_**. 
 
 ## Variable naming rules
 
 Variable names (also called identifiers) shall always begin with a letter, and they can begin with an underline character (_). Variable names are case-sensitive. On top of what you **can** name the variables, there are usually some common conventions, or practices, for naming variables. These conventions differ from one group of programmers to another. 
+
+A good practice is to name global variables with a **g\_** prefix. This helps identify that the variable is global. You can go a step further and denote the data type of the variable in its name (**ui16**: 16 bit unsigned int in this case, and g to indicate global), but that practice is less commonly used. 
 
 Further reading on [variables](https://www.cplusplus.com/doc/tutorial/variables/)
 
@@ -46,12 +60,18 @@ int main(int argc, char* argv[]) {
     return 1; 
 }
 ```
-Variable **g\_ui16\_c** is a global variable. It is global because it is declared outside of any function. It is visible, meaning it can be accessed by any function in the same file and in other files too if said file is included in this other file. A good practice is to name global variables with a g_ prefix. This helps identify that the variable is global. You can go a step further and denote the data type of the variable in its name (ui16: 16 bit unsigned int in this case, and g to indicate global), but that practice is less commonly used. 
+Variable **g\_ui16\_c** is a global variable. It is global because it is declared outside of any function. It is visible, meaning it can be accessed by any function in the same file as well as in other files too if said file is included in this other file. 
 
-The variable **ui8_b** is a local variable in the main function. It is accessible to all instructions within the main function but not to other functions other than main. 
+The variable **ui8_b** is a local variable in the *main()* function. It is accessible to all instructions within the main function but not to other functions beside *main()*. 
 
-Moreover, we can define a narrower scope within a local scope by using curly braces. The local variable **i16_c** is only accessible to instructions within the curly braces. The program above will fail to compile, because we are attempting to access a variable that is **outside** the scope of the call. 
+Moreover, we can define a narrower scope within a local scope by using curly braces. The local variable **i16_c** is only accessible to instructions within the curly braces. The program above will fail to compile, because we are attempting to access a variable that is **outside** the scope of the call. Curley braces define a local scope.
 
+```cpp
+uint8_t ui8_b; 
+{
+    int16_t i16_c; 
+}
+```
 Higher scope elements are accessible to lower scope areas but not the opposite. 
 
 Next: [Arrays & Characters](../lesson5/)
