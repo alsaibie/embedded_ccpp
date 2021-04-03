@@ -25,12 +25,12 @@ for (int k = 0; k <3; k++){
 ```
 The static keyword can be used to specify the memory storage characteristics of a variable. A static variable is a variable that is initialized before the code is executed, and it is only declared and initialized once. 
 
-The variable **\_a** is a regular local variable. Its memory is still reserved at compile time, but it is not initialized until the code is executed. While the variable **_b** is initialized before the code is executed. 
-Notice the difference here between the static and non static variable. Since this part of the code is repeatedly executed. Every time the this line is called the variable **\_a** is redeclared and reinitialized to 3.
+The variable `_a` is a regular local variable. Its memory is still reserved at compile time, but it is not initialized until the code is executed. While the variable `_b` is initialized before the code is executed. 
+Notice the difference here between the static and non static variable. Since this part of the code is repeatedly executed. Every time the this line is called the variable `_a` is redeclared and reinitialized to 3.
 ```cpp
         uint16_t _a = 3; /* lives then dies and gets reinitialized again 2 more times*/
 ```
-While this line is basically executed only the first time. The value in **_b** is retained even after the scope of the variable terminates after the loop ends. 
+While this line is basically executed only the first time. The value in `_b` is retained even after the scope of the variable terminates after the loop ends. 
 ```cpp
 static uint16_t _b = 3; /* Declaring a static variable */
 ```
@@ -45,18 +45,18 @@ The storage specifier extern is used to denote that the variable is declared som
 Output:
 \input{plaintext}{output/snippet2.txt}
 
-This is useful if the variable is declared in a different file. And you are using the same variable across multiple files, you can't declare the variable more than once in every file, but instead you declare it once in one of the files and tell other files about it by using the **extern** keyword.
+This is useful if the variable is declared in a different file. And you are using the same variable across multiple files, you can't declare the variable more than once in every file, but instead you declare it once in one of the files and tell other files about it by using the `extern` keyword.
 
-Here, the extern keyword is of no use since by defining the variable **\_g\_a** we have specified its value and location.
+Here, the extern keyword is of no use since by defining the variable `_g_a` we have specified its value and location.
 ```cpp
 extern uint8_t _g_a = 3; /* Variable declared and defined */
 ```
-It comes in handy when you want to use the variable before it is initialized, you just want the compiler to know that “hey” the variable exists. It will use its initialized value even if its initialized later. And this can be seen with the variable **\_g\_b** here. Without using **extern** above the code will not compile.
+It comes in handy when you want to use the variable before it is initialized, you just want the compiler to know that “hey” the variable exists. It will use its initialized value even if its initialized later. And this can be seen with the variable `_g_b` here. Without using `extern` above the code will not compile.
 ```cpp
 uint8_t _g_b = 5; /* At compile time, _g_b is not visible to above functions */
 ```
 
-Inside the multiplyab function, we just tell the function that there is a global variable named **\_g\_b** of uint8_t type. And note until this point the variable has not been declared. It is declared at the end of the file.
+Inside the multiplyab function, we just tell the function that there is a global variable named `_g_b` of `uint8_t` type. And note until this point the variable has not been declared. It is declared at the end of the file.
 
 ## const
 We discussed the two storage specifiers static and extern. There are two **type qualifiers** const and volatile. A *const* variable, as the name suggests, is a constant variable. It’s value cannot be changed. This is very useful when you want to ensure that the value is not changed by mistake. And this can happen, say you have an important variable with a specific value assigned to it. You wouldn’t want the same variable name to be referenced and manipulated somewhere else unintentionally. 
@@ -89,6 +89,6 @@ Well, what if, and we will see this example clearly in microcontroller programmi
 
 In this case, and to ensure that this non-varying-variable assumption does not damage our program, we can declare a variable to be volatile. This tells the compiler: hey listen, don’t assume the value doesn’t change, every time this variable is called, access and read its latest value from its memory location. 
 
-Note that the **uint8\_t** variables are type-casted to **int** so the output stream treats them as integers not characters.
+Note that the `uint8_t` variables are type-casted to `int` so the output stream treats them as integers not characters.
 
 Next: [Operations](../lesson7/)

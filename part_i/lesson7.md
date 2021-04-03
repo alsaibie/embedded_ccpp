@@ -121,7 +121,7 @@ We can operate on bits directly. Manipulating memory and variables on a bit leve
 |     <<   or >>    |     Right shift or Left shift    |     Shift   bits of argument 1 right/left by argument 2 places                                         |
 
 ## Logical Bitwise Operations
-Let’s look at how we can apply some of the bitwise operations. Here we define three variables. We directly assign binary numbers to **a** and **b**, and a hex number to **c** which has the this binary value. 
+Let’s look at how we can apply some of the bitwise operations. Here we define three variables. We directly assign binary numbers to `a` and `b`, and a hex number to `c` which has the this binary value. 
 
 The following four operations show how to perform an AND, an OR, a NOR and a NOT operation. 
 
@@ -210,24 +210,24 @@ And here we do the same comparisons for a and b but then we perform an OR operat
 bool r2 = (a == 3) || (b == 3); /* Logical Operation, result: 1 (true), as a = 3 */
 ```
 
-We can compare values directly here and the results is true since **a** equals **c**
+We can compare values directly here and the results is true since `a` equals `c`
 ```cpp
 bool r3 = a == c; /* Logical Operation, result: 1 (true), as 3 = 3.0 */
 ```
 
-But **a** is not equal to **d** so that’s false.
+But `a` is not equal to **d** so that’s false.
 ```cpp
 bool r4 = a == d; /* Logical Operation, result: 0 (false), as 3 < 3.001 */
 ```
-If we convert **d** to an int we drop the decimal and it becomes equal to **a**
+If we convert **d** to an int we drop the decimal and it becomes equal to `a`
 ```cpp
 bool r5 = a == (uint8_t)d; /* Logical Operation, result: 1 (true), as 3 = 3 */
 ```
-**a** is smaller than **b** 
+`a` is smaller than `b` 
 ```cpp
 bool r6 = a >= b; /* Logical Operation, result: 0 (false) */
 ```
-and since **a** is smaller than **d**, the value in the bracket is false, if we NOT this value we get a true. 
+and since `a` is smaller than **d**, the value in the bracket is false, if we NOT this value we get a true. 
 ```cpp
     bool r7 = !(a >= b); /* Logical Operation, result: 1 (true) */
 ```
@@ -267,7 +267,7 @@ Here, even though the result variable is a float, again the mathematical operati
 ```
 
 ### Float operation but int variable
-Instead of using a float data type, if it is only required that a float operation be a subpart of a division, then, either the order of the operation would have to be adjusted such that multiplication occurs before division, such as with variable **b** below.
+Instead of using a float data type, if it is only required that a float operation be a subpart of a division, then, either the order of the operation would have to be adjusted such that multiplication occurs before division, such as with variable `b` below.
 
 \input{cpp}{snippet6.cpp}
 \input{plaintext}{output/snippet6.txt}

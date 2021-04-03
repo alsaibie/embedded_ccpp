@@ -6,7 +6,7 @@ int add_2(int a){ /* The variable VALUE will be passed to the function */
     a += 2;
     return a;
 } 
-int add_3(int &a){ /* the variable LOCATION REFERENCE will be passed t othe function */
+int add_3(int &a){ /* the variable LOCATION REFERENCE will be passed to the function */
     a += 3;
     return a;
 } 

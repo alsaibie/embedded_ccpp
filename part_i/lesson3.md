@@ -9,7 +9,7 @@
 
 Understanding data types in a compiled language is important. By knowing the data type used, you know the memory required and the range of values it can hold, as well as how to handle the data type in a mathematical operation. 
 
-Here is a table listing the main data types for a 32-bit system. **Void** denotes empty space, it is not a data type per se. It is used to indicate, for example, that a function does not take any variables, or does not return any variables. 
+Here is a table listing the main data types for a 32-bit system. `Void` denotes empty space, it is not a data type per se. It is used to indicate, for example, that a function does not take any variables, or does not return any variables. 
 
 | C Data Type    | C99 keyword  | Precision & Interpretation |           Range           |
 |----------------|--------------|----------------------------|:-------------------------:|
@@ -35,7 +35,7 @@ The C99 keyword, or the standard library types are better to use. Since they sel
 For the ARM architecture, which is the architecture most widely used nowadays in embedded systems. An int is defined as a 32-bit signed data type. 
 
 ## Decimal Precision
-At the bottom of the list we have **float** and **double**. These are two data types to be used if the variable needs to store non-integer values, whenever you have a fraction or decimal component basically. A double is a 64-bit data type, it’s literally double the size in bits to float. As you can see the precision of the 32-bit float is up to 10^(−38), while the 64-bit double can give a precision of 10^(−305), that’s up to 305 decimal points. 
+At the bottom of the list we have `float` and `double`. These are two data types to be used if the variable needs to store non-integer values, whenever you have a fraction or decimal component basically. A double is a 64-bit data type, it’s literally double the size in bits to float. As you can see the precision of the 32-bit float is up to 10^(−38), while the 64-bit double can give a precision of 10^(−305), that’s up to 305 decimal points. 
 
 The number of decimal points is dynamically allocated with floating point numbers. The data bits of a float or double are shared between a sign bit, an exponent or what’s to the left of the decimal point and the fraction or what’s to the right of a decimal point.
 
