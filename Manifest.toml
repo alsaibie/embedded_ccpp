@@ -133,9 +133,9 @@ version = "1.2.0"
 
 [[NodeJS]]
 deps = ["Pkg"]
-git-tree-sha1 = "350ac618f41958e6e0f6b0d2005ae4547eb1b503"
+git-tree-sha1 = "0c39361bf76293a7bade80e6442e50992f18482b"
 uuid = "2bd173c7-0d6d-553b-b6af-13a54713934c"
-version = "1.1.1"
+version = "1.1.2"
 
 [[OrderedCollections]]
 git-tree-sha1 = "4fa2ba51070ec13fcc7517db714445b4ab986bdf"
