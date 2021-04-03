@@ -26,7 +26,8 @@ Before we start, remember that the best way to learn is to try and experiment. D
 
 This course is not meant to be an exhaustive reference, but only a beginner's launchpad. 
 
-Lecture notes and videos can be found listed on the site navigation bar.
+## Lessons
+Lessons and videos can be found listed on the site navigation bar.
 
 | [Part I ~~~&ensp;&ensp;&ensp;~~~ Fundamentals](part_i/introduction/index.html) 
 
@@ -38,3 +39,7 @@ Lecture notes and videos can be found listed on the site navigation bar.
 
 <!-- | [Part IV](part_iv/introduction/index.html) ~~~&ensp;&ensp;&ensp;~~~| Arduino API -->
 | Part IV ~~~&ensp;&ensp;~~~ Arduino API (Soon)
+
+## Tutorials
+
+| IDE Setups
