@@ -42,4 +42,4 @@ Lessons and videos can be found listed on the site navigation bar.
 
 ## Tutorials
 
-| IDE Setups
+| [IDE Setups](ide_setups/introduction/index.html) 
